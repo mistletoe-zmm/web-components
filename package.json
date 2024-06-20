@@ -1,0 +1,40 @@
+{
+	"name": "web-components",
+	"scripts": {
+		"dev": "vite",
+		"examples:dev": "pnpm -F examples run dev",
+		"examples:build": "pnpm -F examples run build",
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs"
+	},
+	"workspaces": [
+		"packages/*",
+		"examples",
+		"docs"
+	],
+	"dependencies": {
+		"@vitejs/plugin-vue-jsx": "^4.0.0",
+		"@webcomponents/components": "workspace:^1.0.0",
+		"@webcomponents/utils": "workspace:^1.0.0",
+		"prettier-eslint": "^16.3.0",
+		"vue": "^3.4.29"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "17.0.3",
+		"@commitlint/config-conventional": "17.0.3",
+		"@typescript-eslint/eslint-plugin": "5.30.7",
+		"@typescript-eslint/parser": "5.30.7",
+		"@vitejs/plugin-vue": "^5.0.5",
+		"eslint": "7.32.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"eslint-plugin-simple-import-sort": "7.0.0",
+		"eslint-plugin-vue": "7.15.1",
+		"prettier": "2.7.1",
+		"typescript": "^5.4.5",
+		"vite": "^5.3.1",
+		"vitepress": "^1.2.3",
+		"vue-tsc": "^2.0.21"
+	}
+}
